@@ -4,17 +4,20 @@
     {
         private string name;
         private int health;
+        private int attack;
 
         public BaseMonster()
         {
             name = "Base Monster";
             health = 200;
+            attack = 100;
         }
         public string GetName
         {
             get
             {
-                return name;
+                string s = "(" + name + ")";
+                return s;
             }
         }
 
@@ -23,6 +26,13 @@
             get
             {
                 return health;
+            }
+        }
+        public double GetAttack
+        {
+            get
+            {
+                return attack;
             }
         }
     }

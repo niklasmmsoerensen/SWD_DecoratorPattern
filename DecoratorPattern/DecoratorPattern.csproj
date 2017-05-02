@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseMonster.cs" />
+    <Compile Include="DragonMonsterDecorator.cs" />
     <Compile Include="MonsterComponent.cs" />
     <Compile Include="MonsterDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScorpionMonsterDecorator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

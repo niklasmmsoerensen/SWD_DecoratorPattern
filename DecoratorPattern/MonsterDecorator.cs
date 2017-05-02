@@ -18,30 +18,10 @@
         {
             get { return _monsterComponent.GetHealth; }
         }
-    }
 
-    class DragonMonsterDecorator : MonsterDecorator
-    {
-        private string _dragonName;
-        private int _dragonHealth;
-
-        public DragonMonsterDecorator(IMonsterComponent monster, string name, int health) : base(monster)
+        public virtual double GetAttack //virtual so we can override in ConcreteDecorator
         {
-            _dragonName = name;
-            _dragonHealth = health;
-        }
-
-        public override string GetName
-        {
-            get
-            {
-                string s = base.GetName + ":" + _dragonName;
-                return s;
-            }
-        }
-        public override int GetHealth
-        {
-            get { return _dragonHealth + base.GetHealth; }
+            get { return _monsterComponent.GetAttack; }
         }
     }
 }
