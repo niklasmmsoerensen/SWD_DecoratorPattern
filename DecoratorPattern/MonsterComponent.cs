@@ -13,6 +13,7 @@ namespace DecoratorPattern
         string GetName { get;}
         //gets Health of Monster
         int GetHealth { get; }
+        //gets attack of Monster
         double GetAttack { get; }
     }
 }
