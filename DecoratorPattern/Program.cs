@@ -10,12 +10,17 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            DragonMonsterDecorator dragon = new DragonMonsterDecorator(new BaseMonster(), "Blue Eyes White Dragon", 300, 50);
+            BaseMonster baseMonster = new BaseMonster();
+            Console.WriteLine("\n--------------------\nGetName:" + baseMonster.GetName);
+            Console.WriteLine("Attack: " + baseMonster.GetAttack);
+            Console.WriteLine("GetHealth: " + baseMonster.GetHealth + "\n--------------------");
+
+            DragonMonsterDecorator dragon = new DragonMonsterDecorator(baseMonster);
             Console.WriteLine("\n--------------------\nGetName:" + dragon.GetName);
             Console.WriteLine("Attack: " + dragon.GetAttack);
             Console.WriteLine("GetHealth: " + dragon.GetHealth + "\n--------------------");
 
-            ScorpionMonsterDecorator scorpion = new ScorpionMonsterDecorator(new BaseMonster(), "Scorpion", 200, 20);
+            ScorpionMonsterDecorator scorpion = new ScorpionMonsterDecorator(baseMonster, "King", 200, 20);
             Console.WriteLine("\n--------------------\nGetName:" + scorpion.GetName);
             Console.WriteLine("Attack: " + scorpion.GetAttack);
             Console.WriteLine("GetHealth: " + scorpion.GetHealth + "\n--------------------");

@@ -4,6 +4,10 @@
     {
         private IMonsterComponent _monsterComponent = null;
 
+        protected string name = "Undefined";
+        protected int health = 0;
+        protected int attack = 0;
+
         public MonsterDecorator(IMonsterComponent monster)
         {
             _monsterComponent = monster;

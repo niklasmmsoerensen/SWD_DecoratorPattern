@@ -2,30 +2,25 @@
 {
     class ScorpionMonsterDecorator : MonsterDecorator
     {
-        private string _scorpionName;
-        private int _scorpionHealth;
-        private double _attack;
-        private double _attackMultiplier;
 
-        public ScorpionMonsterDecorator(IMonsterComponent monster, string name, int health, double attack) : base(monster)
+        public ScorpionMonsterDecorator(IMonsterComponent monster, string name, int health, int attack) : base(monster)
         {
-            _scorpionName = name;
-            _scorpionHealth = health;
-            _attack = attack;
-            _attackMultiplier = 1.5;
+            this.name = name;
+            this.health = health;
+            this.attack = attack;
         }
 
         public override string GetName
         {
             get
             {
-                string s = base.GetName + " " + _scorpionName + ", GET OVER HERE!";
+                string s = base.GetName + " " + name + " Scorpion";
                 return s;
             }
         }
         public override int GetHealth
         {
-            get { return _scorpionHealth + base.GetHealth; }
+            get { return health + base.GetHealth; }
         }
 
         public override double GetAttack
@@ -35,7 +30,8 @@
 
         private double CalculateAttack()
         {
-            return _attack * _attackMultiplier;
+            double _attackMultiplier = 1.5;
+            return attack * _attackMultiplier;
         }
     }
 }
