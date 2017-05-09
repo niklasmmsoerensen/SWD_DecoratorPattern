@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
-      <y>60</y>
+      <x>690</x>
+      <y>150</y>
       <w>170</w>
       <h>110</h>
     </coordinates>
@@ -20,8 +20,8 @@ MonsterComponent
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
-      <y>290</y>
+      <x>460</x>
+      <y>380</y>
       <w>170</w>
       <h>110</h>
     </coordinates>
@@ -35,8 +35,8 @@ MonsterComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>160</y>
+      <x>530</x>
+      <y>250</y>
       <w>210</w>
       <h>150</h>
     </coordinates>
@@ -46,12 +46,12 @@ MonsterComponent
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>290</y>
+      <x>800</x>
+      <y>380</y>
       <w>170</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>MonsterDecorator
+    <panel_attributes>/MonsterDecorator/
 --
 +GetName : string
 +GetHealth : int
@@ -61,8 +61,8 @@ MonsterComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>160</y>
+      <x>780</x>
+      <y>250</y>
       <w>120</w>
       <h>150</h>
     </coordinates>
@@ -72,8 +72,8 @@ MonsterComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
-      <y>130</y>
+      <x>850</x>
+      <y>220</y>
       <w>90</w>
       <h>180</h>
     </coordinates>
@@ -85,8 +85,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>460</y>
+      <x>710</x>
+      <y>550</y>
       <w>170</w>
       <h>110</h>
     </coordinates>
@@ -100,8 +100,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>390</y>
+      <x>840</x>
+      <y>480</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
@@ -111,8 +111,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>460</y>
+      <x>900</x>
+      <y>550</y>
       <w>190</w>
       <h>120</h>
     </coordinates>
@@ -129,8 +129,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>390</y>
+      <x>910</x>
+      <y>480</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
