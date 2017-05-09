@@ -9,7 +9,7 @@
             this.health = health;
             this.attack = attack;
         }
-
+        //GetName Override
         public override string GetName
         {
             get
@@ -18,16 +18,17 @@
                 return s;
             }
         }
+        //GetHealth Override
         public override int GetHealth
         {
             get { return health + base.GetHealth; }
         }
-
+        //GetAttack Override
         public override double GetAttack
         {
             get { return CalculateAttack() + base.GetAttack; }
         }
-
+        //Help method to calculate the attack based of a modifier
         private double CalculateAttack()
         {
             double _attackMultiplier = 1.5;
