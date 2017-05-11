@@ -1,6 +1,6 @@
 ﻿namespace DecoratorPattern
 {
-    class MonsterDecorator : IMonsterComponent
+    abstract class MonsterDecorator : IMonsterComponent
     {
         private IMonsterComponent _monsterComponent = null;
 

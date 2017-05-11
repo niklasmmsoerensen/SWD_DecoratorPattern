@@ -11,24 +11,23 @@ namespace DecoratorPattern
         static void Main(string[] args)
         {
             BaseMonster baseMonster = new BaseMonster();
-            Console.WriteLine("\n--------------------\nGetName:" + baseMonster.GetName);
-            Console.WriteLine("Attack: " + baseMonster.GetAttack);
-            Console.WriteLine("GetHealth: " + baseMonster.GetHealth + "\n--------------------");
+            PrintMonster(baseMonster);
 
-            DragonMonsterDecorator dragon = new DragonMonsterDecorator(baseMonster);
-            Console.WriteLine("\n--------------------\nGetName:" + dragon.GetName);
-            Console.WriteLine("Attack: " + dragon.GetAttack);
-            Console.WriteLine("GetHealth: " + dragon.GetHealth + "\n--------------------");
+            ArmorDecorator baseWithArmor = new ArmorDecorator(baseMonster);
+            PrintMonster(baseWithArmor);
 
-            ScorpionMonsterDecorator scorpion = new ScorpionMonsterDecorator(baseMonster, "King", 200, 20);
-            Console.WriteLine("\n--------------------\nGetName:" + scorpion.GetName);
-            Console.WriteLine("Attack: " + scorpion.GetAttack);
-            Console.WriteLine("GetHealth: " + scorpion.GetHealth + "\n--------------------");
+            ShieldDecorator shield = new ShieldDecorator(baseWithArmor);
+            PrintMonster(shield);
 
-            ScorpionMonsterDecorator test = new ScorpionMonsterDecorator(dragon, "NAVN", 1000, 50);
-            Console.WriteLine("\n--------------------\nGetName:" + test.GetName);
-            Console.WriteLine("Attack: " + test.GetAttack);
-            Console.WriteLine("GetHealth: " + test.GetHealth + "\n--------------------");
+            QuickAttackDecorator quick = new QuickAttackDecorator(shield);
+            PrintMonster(quick);
+        }
+
+        static void PrintMonster(IMonsterComponent monster)
+        {
+            Console.WriteLine("\n--------------------\nGetName:" + monster.GetName);
+            Console.WriteLine("Attack: " + monster.GetAttack);
+            Console.WriteLine("GetHealth: " + monster.GetHealth + "\n--------------------");
         }
     }
 }

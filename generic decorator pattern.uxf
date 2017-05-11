@@ -47,7 +47,7 @@ Component
       <w>180</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>Decorator
+    <panel_attributes>/Decorator/
 --
 -_component : Component
 --
