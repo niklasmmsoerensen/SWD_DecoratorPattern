@@ -24,6 +24,11 @@ namespace DecoratorPattern
             Console.WriteLine("\n--------------------\nGetName:" + scorpion.GetName);
             Console.WriteLine("Attack: " + scorpion.GetAttack);
             Console.WriteLine("GetHealth: " + scorpion.GetHealth + "\n--------------------");
+
+            ScorpionMonsterDecorator test = new ScorpionMonsterDecorator(dragon, "NAVN", 1000, 50);
+            Console.WriteLine("\n--------------------\nGetName:" + test.GetName);
+            Console.WriteLine("Attack: " + test.GetAttack);
+            Console.WriteLine("GetHealth: " + test.GetHealth + "\n--------------------");
         }
     }
 }
