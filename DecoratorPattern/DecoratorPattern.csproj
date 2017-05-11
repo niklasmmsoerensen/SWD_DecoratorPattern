@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ShieldDecorator - Copy.cs" />
+    <Compile Include="QuickAttackDecorator.cs" />
     <Compile Include="ShieldDecorator.cs" />
     <Compile Include="BaseMonster.cs" />
     <Compile Include="ArmorDecorator.cs" />

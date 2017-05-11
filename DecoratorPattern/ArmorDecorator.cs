@@ -5,7 +5,6 @@
         public ArmorDecorator(IMonsterComponent monster) : base(monster)
         {
             this.name = " (armor) ";
-            this.attack = 0; //adds no attack
             this.health = 500; //adds 500 health
         }
 
@@ -22,11 +21,6 @@
         public override int GetHealth
         {
             get { return health + base.GetHealth; }
-        }
-        //GetAttack Override
-        public override double GetAttack
-        {
-            get { return attack + base.GetAttack; }
         }
     }
 }

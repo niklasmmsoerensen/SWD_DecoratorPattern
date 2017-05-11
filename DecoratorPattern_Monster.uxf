@@ -51,7 +51,7 @@ MonsterComponent
       <w>170</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>MonsterDecorator
+    <panel_attributes>/MonsterDecorator/
 --
 /+GetName : string/
 /+GetHealth : int/
@@ -85,22 +85,46 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
+      <x>630</x>
       <y>550</y>
-      <w>170</w>
-      <h>110</h>
+      <w>140</w>
+      <h>90</h>
     </coordinates>
-    <panel_attributes>MonsterDecorator
+    <panel_attributes>ArmorDecorator
 --
 +GetName : string
-+GetHealth : int
-+GetAttack : double</panel_attributes>
++GetHealth : int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
+      <x>690</x>
+      <y>480</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;190.0;40.0;10.0;40.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>550</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ShieldDecorator
+--
++GetName : string
++GetHealth : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
       <y>480</y>
       <w>30</w>
       <h>90</h>
@@ -111,30 +135,28 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
+      <x>1000</x>
       <y>550</y>
-      <w>190</w>
-      <h>120</h>
+      <w>150</w>
+      <h>90</h>
     </coordinates>
-    <panel_attributes>ScorpionMonsterDecorator
+    <panel_attributes>QuickAttackDecorator
 --
--CalculateAttack() : double
--_attackMultiplier : double
+-QuickAttack : int
 --
 +GetName : string
-+GetHealth : int
 +GetAttack : double</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
+      <x>870</x>
       <y>480</y>
-      <w>30</w>
+      <w>220</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;200.0;40.0;200.0;70.0</additional_attributes>
   </element>
 </diagram>
